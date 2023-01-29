@@ -7,7 +7,7 @@ definitions:
       - type
     properties:
       id:
-        description: The unique identifier of a spacecraft
+        description: The unique identifier of a spacecraft - chnages
         type: string
       name:
         type: string
