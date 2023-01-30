@@ -22,19 +22,24 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+					"raw": "{{baseUrl}}/spacecrafts/:spacecraftId-edited?new-key=new-value",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"spacecrafts",
-						":spacecraftId"
+						":spacecraftId-edited"
+					],
+					"query": [
+						{
+							"key": "new-key",
+							"value": "new-value"
+						}
 					],
 					"variable": [
 						{
-							"key": "spacecraftId",
-							"value": "Lorem aliqua",
-							"description": "(Required) The unique identifier of the spacecraft"
+							"key": "spacecraftId-edited",
+							"value": "value"
 						}
 					]
 				}
@@ -165,6 +170,81 @@
 					],
 					"cookie": [],
 					"body": "{\n  \"message\": \"Duis eu \"\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"id": "b3843942-b4eb-43a5-a83c-11f97f3ef3e0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "header-1",
+						"value": "value-1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"key1\": \"value1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "www.google.com?gfg=fgfgf",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"query": [
+						{
+							"key": "gfg",
+							"value": "fgfgf",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3613a6bb-0b5d-4959-a955-88ce20f96c29",
+					"name": "New exampple",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "www.google.com?ke=rtr",
+							"host": [
+								"www",
+								"google",
+								"com"
+							],
+							"query": [
+								{
+									"key": "ke",
+									"value": "rtr"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "x-mock-response-id",
+							"value": "rttrtr",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": []
 				}
 			]
 		}
