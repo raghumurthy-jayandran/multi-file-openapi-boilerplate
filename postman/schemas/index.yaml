@@ -8,7 +8,7 @@ paths:
   /spacecrafts/{spacecraftId}:
     parameters:
       - name: spacecraftId
-        description: The unique identifier of the spacecraft -updated
+        description: The unique identifier of the spacecraft -updated-1
         in: path
         required: true
         schema:
